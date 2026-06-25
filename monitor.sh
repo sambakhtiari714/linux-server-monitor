@@ -1,4 +1,7 @@
 #!/bin/bash
+source scripts/check_disk.sh
+source config.conf
+source scripts/check_ram.sh
 EXIT_CODE=0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -40,28 +43,9 @@ mkdir -p logs
 	free -h
 	
 	echo""
-	DISK_USAGE=$(df / | tail -1 | awk '{print $5}' | sed 's/%//')
-	echo "current Disk Usage: ${DISK_USAGE}%"
 
-
-	if [ "$DISK_USAGE" -gt 80 ]
-	then
-		echo -e "${RED}WARNING: Disk usage is above 80%${NC}"
-		EXIT_CODE=1
-	else
-		echo -e "${GREEN}Disk usage is normal${NC}"
-	fi
-	TOTAL_RAM=$(free | grep Mem | awk '{print $2}')
-	USED_RAM=$(free | grep Mem | awk '{print $3}')
-	RAM_USAGE=$(( USED_RAM *100 / TOTAL_RAM ))
-	echo "RAM USAGE : ${RAM_USAGE}%"
-	if [ "$RAM_USAGE" -gt 85 ]
-	then
-		echo -e "${RED}WARNING: RAM Usage is above 85%${NC}"
-		EXIT_CODE=1
-	else
-		echo -e "${GREEN}RAM Usage is normal${NC}"
-	fi
+	check_disk
+	check_ram
 	check_service ssh
 	check_service nginx
 	check_service docker
