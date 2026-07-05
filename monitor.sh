@@ -1,4 +1,5 @@
 #!/bin/bash
+source scripts/summary.sh
 source scripts/check_services.sh
 source scripts/check_disk.sh
 source config.conf
@@ -56,12 +57,15 @@ CPU_USAGE_INT=$(printf "%.0f" "$CPU_USAGE")
 if [ "$CPU_USAGE_INT" -gt 85 ]
 then
 	echo -e "${RED}WARNING: CPU Usage is above 85%${NC}"
+	CPU_STATUS="WARNING"
 	EXIT_CODE=1
 else
 	echo -e "${GREEN}Cpu Usage is normal ${NC}"
+	CPU_STATUS="OK"
 fi
 
 	check_services
+	print_summary
 
 
 } | tee -a logs/system.log

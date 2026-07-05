@@ -342,3 +342,254 @@ Cpu Usage : 15.4%
 [0;31mWarning: ssh service is down[0m
 [0;31mWarning: nginx service is down[0m
 [0;32mdocker service is running[0m
+=======================================
+report date: Mon Jun 29 11:15:31 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 23:15:31 up 27 min,  1 user,  load average: 0.36, 0.30, 0.27
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.0M  385M   1% /run
+/dev/sda2        20G   14G  5.3G  72% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       106Mi        32Mi       2.6Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 72%
+[0;32mDisk usage is normal[0m
+RAM USAGE : 35%
+[0;32mRAM Usage is normal[0m
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.36 0.30 0.27
+Cpu Usage : 15.4%
+[0;32mCpu Usage is normal [0m
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+=======================================
+report date: Wed Jul  1 11:17:36 AM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 11:17:36 up 4 min,  1 user,  load average: 0.66, 1.50, 0.81
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  5.0G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  116K  387M   1% /run/user/1000
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.2Gi       131Mi        39Mi       2.7Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+[0;32mDisk usage is normal[0m
+RAM USAGE : 32%
+[0;32mRAM Usage is normal[0m
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.66 1.50 0.81
+Cpu Usage : 13%
+[0;32mCpu Usage is normal [0m
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+=======================================
+report date: Sun Jul  5 09:17:26 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 21:17:26 up 2 min,  1 user,  load average: 1.20, 1.15, 0.49
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  5.2G  72% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.2Gi       532Mi        34Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 72%
+[0;32mDisk usage is normal[0m
+RAM USAGE : 33%
+[0;32mRAM Usage is normal[0m
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 1.20 1.15 0.49
+Cpu Usage : 17.9%
+[0;32mCpu Usage is normal [0m
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+=======================================
+report date: Sun Jul  5 09:26:09 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 21:26:09 up 11 min,  1 user,  load average: 0.09, 0.30, 0.32
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  5.2G  72% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.2Gi       529Mi        34Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 72%
+[0;32mDisk usage is normal[0m
+RAM USAGE : 32%
+[0;32mRAM Usage is normal[0m
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.09 0.30 0.32
+Cpu Usage : 8.7%
+[0;32mCpu Usage is normal [0m
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Sun Jul  5 09:28:20 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 21:28:20 up 13 min,  1 user,  load average: 0.09, 0.23, 0.28
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  5.2G  72% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       488Mi        34Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 72%
+[0;32mDisk usage is normal[0m
+RAM USAGE : 33%
+[0;32mRAM Usage is normal[0m
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.09 0.23 0.28
+Cpu Usage : 12.5%
+[0;32mCpu Usage is normal [0m
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING

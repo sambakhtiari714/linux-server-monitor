@@ -6,8 +6,10 @@ check_disk() {
     if [ "$DISK_USAGE" -gt "$DISK_THRESHOLD" ]
     then
         echo -e "${RED}WARNING: Disk usage is above ${DISK_THRESHOLD}%${NC}"
+        DISK_STATUS="WARNING"
         EXIT_CODE=1
     else
         echo -e "${GREEN}Disk usage is normal${NC}"
+        DISK_STATUS="OK"
     fi
 }

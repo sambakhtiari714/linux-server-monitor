@@ -10,8 +10,10 @@ check_ram() {
     if [ "$RAM_USAGE" -gt "$RAM_THRESHOLD" ]
     then
         echo -e "${RED}WARNING: RAM Usage is above ${RAM_THRESHOLD}%${NC}"
-        EXIT_CODE=1
+	RAM_STATUS= "WARNING"
+       	EXIT_CODE=1
     else
         echo -e "${GREEN}RAM Usage is normal${NC}"
+	RAM_STATUS="OK"
     fi
 }
