@@ -1,9 +1,11 @@
 #!/bin/bash
-source scripts/summary.sh
-source scripts/check_services.sh
-source scripts/check_disk.sh
-source config.conf
-source scripts/check_ram.sh
+source scripts/engine/summary_engine.sh
+source scripts/collectors/services.sh
+source scripts/collectors/disk.sh
+source config/config.conf
+source scripts/collectors/ram.sh
+source scripts/collectors/cpu.sh
+source scripts/engine/policy_engine.sh
 EXIT_CODE=0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -36,36 +38,13 @@ mkdir -p logs
 
 	check_disk
 	check_ram
+	check_cpu
 
 echo ""
-echo "CPU INFORMATION"
-
-CPU_CORES=$(nproc)
-
-echo "CPU Cores : $CPU_CORES"
-
-LOAD=$( cat /proc/loadavg | awk '{print $1, $2, $3}')
-
-echo "Load Average : $LOAD"
-
-CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100-$8}')
-echo "Cpu Usage : ${CPU_USAGE}%"
-
-
-CPU_USAGE_INT=$(printf "%.0f" "$CPU_USAGE")
-
-if [ "$CPU_USAGE_INT" -gt 85 ]
-then
-	echo -e "${RED}WARNING: CPU Usage is above 85%${NC}"
-	CPU_STATUS="WARNING"
-	EXIT_CODE=1
-else
-	echo -e "${GREEN}Cpu Usage is normal ${NC}"
-	CPU_STATUS="OK"
-fi
 
 	check_services
 	print_summary
+	
 
 
 } | tee -a logs/system.log
