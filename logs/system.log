@@ -980,3 +980,1155 @@ DOCKER  : OK
 
 
 Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 12:20:51 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:20:51 up 35 min,  1 user,  load average: 0.18, 0.14, 0.29
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       213Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.18 0.14 0.29
+Cpu Usage : 8.3%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 12:21:33 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:21:33 up 36 min,  1 user,  load average: 0.24, 0.15, 0.29
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       212Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.24 0.15 0.29
+Cpu Usage : 4.8%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 12:28:24 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:28:24 up 43 min,  1 user,  load average: 0.01, 0.04, 0.18
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       216Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.01 0.04 0.18
+Cpu Usage : 4.8%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 12:45:52 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:45:52 up  1:01,  1 user,  load average: 0.11, 0.05, 0.08
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi       200Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.11 0.05 0.08
+Cpu Usage : 4.5%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+SERVICE_NOT_INSTALLED
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 12:47:13 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:47:13 up  1:02,  1 user,  load average: 0.03, 0.04, 0.07
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi       198Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.03 0.04 0.07
+Cpu Usage : 4.5%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern Engine Loaded
+SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern Engine Loaded
+SERVICE_NOT_INSTALLED
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 01:01:41 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:01:41 up  1:16,  1 user,  load average: 0.16, 0.12, 0.08
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  132K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi       173Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 36%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.16 0.12 0.08
+Cpu Usage : 8.7%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Error Count : 0
+Warning Count : 0
+Failed Count : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Error Count : 0
+Warning Count : 0
+Failed Count : 0
+Timeout Count : 0
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 01:09:17 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:09:17 up  1:24,  1 user,  load average: 0.15, 0.12, 0.09
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  132K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi       167Mi        33Mi       2.5Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 36%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.15 0.12 0.09
+Cpu Usage : 15.4%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 01:11:37 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:11:37 up  1:26,  1 user,  load average: 0.11, 0.14, 0.10
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       284Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.11 0.14 0.10
+Cpu Usage : 21.4%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : OK
+Error Count   : 4
+Warning Count : 0
+Failed Count  : 2
+Timeout Count : 1
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 01:25:53 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:25:53 up  1:41,  1 user,  load average: 0.04, 0.05, 0.06
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       282Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.04 0.05 0.06
+Cpu Usage : 16%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : OK
+Error Count   : 4
+Warning Count : 0
+Failed Count  : 2
+Timeout Count : 1
+
+Detected Issues:
+----------------
+Jul 07 23:50:03 sam-VMware-Virtual-Platform dockerd[1448]: time="2026-07-07T23:50:03.835963033+03:30" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Jul 08 11:45:52 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T11:45:52.783775661+03:30" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+Jul 08 11:45:52 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T11:45:52.783897369+03:30" level=info msg="CDI directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+Jul 08 11:45:53 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T11:45:53.834634496+03:30" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Jul 08 11:45:54 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T11:45:54.659109199+03:30" level=info msg="Deleting nftables IPv4 rules" error="exit status 1"
+Jul 08 11:45:55 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T11:45:55.169843112+03:30" level=info msg="Deleting nftables IPv6 rules" error="exit status 1"
+Jul 08 13:11:21 sam-VMware-Virtual-Platform dockerd[1549]: time="2026-07-08T13:11:21.939900230+03:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:09:49 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:09:49 up  1:51,  1 user,  load average: 0.04, 0.14, 0.12
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       270Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.04 0.14 0.12
+Cpu Usage : 8.7%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : 
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:31:59 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:31:59 up  2:14,  1 user,  load average: 0.03, 0.03, 0.05
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       266Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.03 0.03 0.05
+Cpu Usage : 13%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : 
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:32:29 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:32:29 up  2:14,  1 user,  load average: 0.02, 0.03, 0.04
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       264Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.02 0.03 0.04
+Cpu Usage : 9.1%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : 
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:34:22 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:34:22 up  2:16,  1 user,  load average: 0.07, 0.06, 0.05
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       255Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.07 0.06 0.05
+Cpu Usage : 12.5%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : 
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:37:10 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:37:10 up  2:19,  1 user,  load average: 0.00, 0.03, 0.04
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       255Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.03 0.04
+Cpu Usage : 4.8%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : OK
+Error Count   : 4
+Warning Count : 0
+Failed Count  : 2
+Timeout Count : 1
+
+Detected Issues:
+----------------
+jul 07 23:50:03 sam-vmware-virtual-platform dockerd[1448]: time="2026-07-07t23:50:03.835963033+03:30" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783775661+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783897369+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+jul 08 11:45:53 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:53.834634496+03:30" level=info msg="creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+jul 08 11:45:54 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:54.659109199+03:30" level=info msg="deleting nftables ipv4 rules" error="exit status 1"
+jul 08 11:45:55 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:55.169843112+03:30" level=info msg="deleting nftables ipv6 rules" error="exit status 1"
+jul 08 13:11:21 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t13:11:21.939900230+03:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:38:07 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:38:07 up  2:20,  1 user,  load average: 0.00, 0.02, 0.03
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       260Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.02 0.03
+Cpu Usage : 8.7%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : OK
+Error Count   : 4
+Warning Count : 0
+Failed Count  : 2
+Timeout Count : 1
+
+Detected Issues:
+----------------
+jul 07 23:50:03 sam-vmware-virtual-platform dockerd[1448]: time="2026-07-07t23:50:03.835963033+03:30" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783775661+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783897369+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+jul 08 11:45:53 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:53.834634496+03:30" level=info msg="creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+jul 08 11:45:54 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:54.659109199+03:30" level=info msg="deleting nftables ipv4 rules" error="exit status 1"
+jul 08 11:45:55 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:55.169843112+03:30" level=info msg="deleting nftables ipv6 rules" error="exit status 1"
+jul 08 13:11:21 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t13:11:21.939900230+03:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:39:01 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:39:01 up  2:21,  1 user,  load average: 0.00, 0.02, 0.03
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       260Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.02 0.03
+Cpu Usage : 9.1%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : 
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : 
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING
+=======================================
+report date: Wed Jul  8 02:39:51 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:39:51 up  2:21,  1 user,  load average: 0.00, 0.01, 0.02
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.8M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       250Mi        33Mi       2.5Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.01 0.02
+Cpu Usage : 4.3%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;31mWarning: docker service is down[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : docker
+Status    : DOWN
+Pattern State : OK
+Error Count   : 4
+Warning Count : 0
+Failed Count  : 2
+Timeout Count : 1
+
+Detected Issues:
+----------------
+jul 07 23:50:03 sam-vmware-virtual-platform dockerd[1448]: time="2026-07-07t23:50:03.835963033+03:30" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783775661+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/etc/cdi
+jul 08 11:45:52 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:52.783897369+03:30" level=info msg="cdi directory does not exist, skipping: failed to monitor for changes: no such file or directory" dir=/var/run/cdi
+jul 08 11:45:53 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:53.834634496+03:30" level=info msg="creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+jul 08 11:45:54 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:54.659109199+03:30" level=info msg="deleting nftables ipv4 rules" error="exit status 1"
+jul 08 11:45:55 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t11:45:55.169843112+03:30" level=info msg="deleting nftables ipv6 rules" error="exit status 1"
+jul 08 13:11:21 sam-vmware-virtual-platform dockerd[1549]: time="2026-07-08t13:11:21.939900230+03:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : DOWN
+
+
+Overall Status : WARNING

@@ -7,7 +7,8 @@ source scripts/collectors/ram.sh
 source scripts/collectors/cpu.sh
 source scripts/engine/policy_engine.sh
 source scripts/engine/log_engine.sh
-
+source scripts/engine/incident_engine.sh
+source scripts/engine/pattern_engine_old.sh
 EXIT_CODE=0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -45,6 +46,7 @@ mkdir -p logs
 echo ""
 
 	check_services
+	process_incidents
 	print_summary
 	
 
