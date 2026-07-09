@@ -2132,3 +2132,523 @@ DOCKER  : DOWN
 
 
 Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 12:19:50 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:19:50 up 9 min,  1 user,  load average: 0.14, 0.57, 0.53
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       498Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.14 0.57 0.53
+Cpu Usage : 8.3%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 12:25:09 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:25:09 up 15 min,  1 user,  load average: 0.00, 0.20, 0.37
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       497Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 33%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.20 0.37
+Cpu Usage : 8%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT=======
+Component : ssh
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+========= INCIDENT=======
+Component : nginx
+Status    : DOWN
+Pattern State : OK
+Error Count   : 0
+Warning Count : 0
+Failed Count  : 0
+Timeout Count : 0
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 12:39:24 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:39:24 up 29 min,  1 user,  load average: 0.27, 0.14, 0.19
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       442Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.27 0.14 0.19
+Cpu Usage : 9.1%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Service is not installed.
+
+========= INCIDENT =======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 12:46:36 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:46:36 up 36 min,  1 user,  load average: 0.01, 0.06, 0.13
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       461Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.01 0.06 0.13
+Cpu Usage : 16%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 12:51:16 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 12:51:16 up 41 min,  1 user,  load average: 0.00, 0.03, 0.09
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  120K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       459Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.00 0.03 0.09
+Cpu Usage : 15.4%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 01:05:06 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:05:06 up 54 min,  1 user,  load average: 0.11, 0.07, 0.06
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       433Mi        32Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.11 0.07 0.06
+Cpu Usage : 16%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 01:22:12 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:22:12 up  1:12,  1 user,  load average: 0.09, 0.08, 0.05
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  128K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       414Mi        32Mi       2.3Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.09 0.08 0.05
+Cpu Usage : 9.1%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component : ssh
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component : nginx
+Status    : DOWN
+Pattern State : SERVICE_NOT_INSTALLED
+Severity      : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+=======================================
+report date: Thu Jul  9 01:33:39 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 13:33:39 up  1:23,  1 user,  load average: 0.10, 0.04, 0.01
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.3M  385M   1% /run
+/dev/sda2        20G   14G  4.9G  74% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       416Mi        32Mi       2.3Gi       2.4Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 74%
+RAM USAGE : 35%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.10 0.04 0.01
+Cpu Usage : 12%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component      : ssh
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Incident Score : 0
+Severity       : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component      : nginx
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Incident Score : 0
+Severity       : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
