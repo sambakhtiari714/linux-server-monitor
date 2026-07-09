@@ -2785,3 +2785,70 @@ DOCKER  : OK
 
 Overall Status : WARNING
 Final Exit Code = 1
+=======================================
+report date: Thu Jul  9 02:45:17 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 14:45:17 up 19 min,  1 user,  load average: 0.11, 0.19, 0.61
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  4.8G  75% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  116K  387M   1% /run/user/1000
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.2Gi       553Mi        34Mi       2.3Gi       2.6Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 75%
+RAM USAGE : 31%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.11 0.19 0.61
+Cpu Usage : 12.5%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+
+========= INCIDENT =======
+Component      : ssh
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Incident Score : 0
+Severity       : LOW
+Service is not installed.
+
+========= INCIDENT =======
+Component      : nginx
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Incident Score : 0
+Severity       : LOW
+Service is not installed.
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+Final Exit Code = 1
