@@ -1,4 +1,5 @@
 #!/bin/bash
+#!/bin/bash
 source scripts/engine/summary_engine.sh
 source scripts/collectors/services.sh
 source scripts/collectors/disk.sh
@@ -20,40 +21,37 @@ YELLOW='\033[1;33m'
 
 
 mkdir -p logs
-{
+exec > >(tee -a logs/system.log) 2>&1
 
-	echo "======================================="
-	echo "report date: $(date)"
-	
-	echo "host name"
-	hostname
-	echo""
-	echo "current user"
-	whoami
-	echo""
-	echo "uptime"
-	uptime
-	echo""
-	echo "disk usage"
-	df -h
-	echo ""
-	echo "memory usage"
-	free -h
-	
-	echo""
+echo "======================================="
+echo "report date: $(date)"
 
-	check_disk
-	check_ram
-	check_cpu
+echo "host name"
+hostname
+echo ""
+echo "current user"
+whoami
+echo ""
+echo "uptime"
+uptime
+echo ""
+echo "disk usage"
+df -h
+echo ""
+echo "memory usage"
+free -h
 
 echo ""
 
-	check_services
-	process_incidents
-	print_summary
-	
+check_disk
+check_ram
+check_cpu
 
+echo ""
 
-} | tee -a logs/system.log
+check_services
+process_incidents
+print_summary
+
 echo "Final Exit Code = $EXIT_CODE"
 exit $EXIT_CODE
