@@ -10,6 +10,8 @@ source scripts/engine/log_engine.sh
 source scripts/engine/incident_engine.sh
 source scripts/engine/pattern_engine.sh
 source scripts/engine/severity_engine.sh
+source scripts/engine/incident_builder.sh
+source scripts/engine/report_engine.sh
 EXIT_CODE=0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
