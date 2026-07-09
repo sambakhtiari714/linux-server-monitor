@@ -1,4 +1,3 @@
-
 check_service(){
     SERVICE_NAME=$1
     SERVICE_VAR=$(echo "$SERVICE_NAME" | tr '[:lower:]' '[:upper:]')
@@ -15,8 +14,8 @@ check_service(){
     fi
 }
 check_services(){
-	check_service ssh
-	check_service nginx
-	check_service docker
+	for SERVICE in $SERVICES
+	do
+		check_service "$SERVICE"
+	done
 }
-
