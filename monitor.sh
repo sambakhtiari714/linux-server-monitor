@@ -3,7 +3,9 @@
 source scripts/engine/summary_engine.sh
 source scripts/collectors/services.sh
 source scripts/collectors/disk.sh
+source scripts/engine/config_validator.sh
 source config/config.conf
+validate_config
 source scripts/collectors/ram.sh
 source scripts/collectors/cpu.sh
 source scripts/engine/policy_engine.sh
@@ -13,6 +15,7 @@ source scripts/engine/pattern_engine.sh
 source scripts/engine/severity_engine.sh
 source scripts/engine/incident_builder.sh
 source scripts/engine/report_engine.sh
+
 EXIT_CODE=0
 RED='\033[0;31m'
 GREEN='\033[0;32m'
