@@ -55,6 +55,9 @@ extract_patterns() {
     PATTERN_TIMEOUT_COUNT=0
 
     PATTERN_MATCHED_LINES=""
+    PATTERN_CRITICAL_FOUND=false
+
+
 
     PATTERN_ERROR_COUNT=$(echo "$LOG_DATA" | grep -ic "error")
     PATTERN_WARNING_COUNT=$(echo "$LOG_DATA" | grep -ic "warning")
@@ -65,6 +68,11 @@ extract_patterns() {
         echo "$LOG_DATA" |
         grep -iE "error|failed|fatal|panic|timeout|permission denied|connection refused"
     )
+    if echo "$LOG_DATA" | grep -qiE \
+	    "kernel panic|out of memory|segmentation fault|filesystem corruption"
+    then
+	    PATTERN_CRITICAL_FOUND=true
+    fi
 
     if [ "$PATTERN_ERROR_COUNT" -gt 0 ] ||
        [ "$PATTERN_FAILED_COUNT" -gt 0 ] ||

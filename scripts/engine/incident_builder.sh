@@ -12,14 +12,17 @@ build_incident() {
 
     INCIDENT_SEVERITY="$INCIDENT_SEVERITY"
 
-    INCIDENT_ERROR_COUNT="$PATTERN_ERROR_COUNT"
+    INCIDENT_TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S")
 
-    INCIDENT_WARNING_COUNT="$PATTERN_WARNING_COUNT"
+}
+print_incident() {
 
-    INCIDENT_FAILED_COUNT="$PATTERN_FAILED_COUNT"
-
-    INCIDENT_TIMEOUT_COUNT="$PATTERN_TIMEOUT_COUNT"
-
-    INCIDENT_MATCHED_LINES="$PATTERN_MATCHED_LINES"
+    echo "Component      : $INCIDENT_COMPONENT"
+    echo "Status         : $INCIDENT_STATUS"
+    echo "Pattern State  : $INCIDENT_PATTERN_STATE"
+    echo "Log Level      : $INCIDENT_LOG_LEVEL"
+    echo "Incident Score : $INCIDENT_SCORE"
+    echo "Severity       : $INCIDENT_SEVERITY"
+    echo "Timestamp      : $INCIDENT_TIMESTAMP"
 
 }

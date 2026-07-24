@@ -17,7 +17,7 @@ process_incidents() {
 
             build_incident
 
-            print_incident_report
+            print_incident
 
         fi
 
