@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-24T22:44:02+03:30",
+  "hostname": "sam-VMware-Virtual-Platform",
+  "overall_status": "WARNING",
+  "system": {
+    "disk": { "usage_percent": 73, "status": "OK", "severity": "OK" },
+    "ram": { "usage_percent": 34, "status": "OK", "severity": "OK" },
+    "cpu": { "usage_percent": 15, "status": "OK", "severity": "OK" }
+  },
+  "services": [
+    {
+      "name": "docker",
+      "status": "OK",
+      "severity": "OK",
+      "critical_pattern_matched": false,
+      "score": null,
+      "pattern_state": null,
+      "log_level": null,
+      "error_count": null,
+      "warning_count": null,
+      "failed_count": null,
+      "timeout_count": null,
+      "matched_lines": []
+    },
+    {
+      "name": "ssh",
+      "status": "DOWN",
+      "severity": "LOW",
+      "critical_pattern_matched": false,
+      "score": 0,
+      "pattern_state": "SERVICE_NOT_INSTALLED",
+      "log_level": null,
+      "error_count": 0,
+      "warning_count": 0,
+      "failed_count": 0,
+      "timeout_count": 0,
+      "matched_lines": []
+    },
+    {
+      "name": "nginx",
+      "status": "DOWN",
+      "severity": "CRITICAL",
+      "critical_pattern_matched": true,
+      "score": 0,
+      "pattern_state": "ERROR",
+      "log_level": "FATAL",
+      "error_count": 0,
+      "warning_count": 0,
+      "failed_count": 0,
+      "timeout_count": 0,
+      "matched_lines": ["nginx[1]: kernel panic - not syncing"]
+    }
+  ]
+}

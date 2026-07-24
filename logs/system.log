@@ -2984,3 +2984,133 @@ DOCKER  : OK
 
 Overall Status : WARNING
 Final Exit Code = 1
+=======================================
+report date: Fri Jul 24 10:44:01 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 22:44:01 up 34 min,  1 user,  load average: 0.07, 0.18, 0.17
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.5M  385M   1% /run
+/dev/sda2        20G   14G  5.1G  73% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  140K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+vmhgfs-fuse     476G  323G  153G  68% /mnt/hgfs
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       137Mi        32Mi       2.6Gi       2.5Gi
+Swap:          3.6Gi       592Ki       3.6Gi
+
+current Disk Usage: 73%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.07 0.18 0.17
+Cpu Usage : 15.4%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+Component      : ssh
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Log Level      : 
+Incident Score : 0
+Severity       : LOW
+Timestamp      : 2026-07-24 22:44:02
+Component      : nginx
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Log Level      : 
+Incident Score : 0
+Severity       : LOW
+Timestamp      : 2026-07-24 22:44:02
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+Final Exit Code = 1
+=======================================
+report date: Fri Jul 24 11:12:33 PM +0330 2026
+host name
+sam-VMware-Virtual-Platform
+
+current user
+sam
+
+uptime
+ 23:12:33 up 10 min,  1 user,  load average: 0.16, 0.48, 0.39
+
+disk usage
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           387M  2.2M  385M   1% /run
+/dev/sda2        20G   14G  5.1G  73% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M  8.0K  5.0M   1% /run/lock
+tmpfs           387M  124K  387M   1% /run/user/1000
+/dev/sr0         90M   90M     0 100% /media/sam/CDROM
+/dev/sr1        6.0G  6.0G     0 100% /media/sam/Ubuntu 24.04.2 LTS amd64
+
+memory usage
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.3Gi       477Mi        33Mi       2.3Gi       2.5Gi
+Swap:          3.6Gi          0B       3.6Gi
+
+current Disk Usage: 73%
+RAM USAGE : 34%
+
+CPU INFORMATION
+CPU Cores : 2
+Load Average : 0.16 0.48 0.39
+Cpu Usage : 12%
+
+[0;31mWarning: ssh service is down[0m
+[0;31mWarning: nginx service is down[0m
+[0;32mdocker service is running[0m
+Component      : ssh
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Log Level      : 
+Incident Score : 0
+Severity       : LOW
+Timestamp      : 2026-07-24 23:12:33
+Component      : nginx
+Status         : DOWN
+Pattern State  : SERVICE_NOT_INSTALLED
+Log Level      : 
+Incident Score : 0
+Severity       : LOW
+Timestamp      : 2026-07-24 23:12:33
+
+=======================================
+SERVER HEALTH SUMMARY
+=======================================
+Disk    : OK
+RAM     : OK
+CPU     : OK
+SSH     : DOWN
+NGINX   : DOWN
+DOCKER  : OK
+
+
+Overall Status : WARNING
+Final Exit Code = 1

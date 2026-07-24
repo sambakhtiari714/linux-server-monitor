@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Linux Server Monitor - Incident Report",
+  "description": "Contract for incidents.json, the file produced by the Bash pipeline and consumed by the FastAPI/LLM layer.",
+  "type": "object",
+  "required": ["generated_at", "hostname", "overall_status", "system", "services"],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When this report was generated, ISO 8601 format."
+    },
+    "hostname": {
+      "type": "string",
+      "description": "Hostname of the monitored server."
+    },
+    "overall_status": {
+      "type": "string",
+      "enum": ["OK", "WARNING"],
+      "description": "High-level summary of the whole report."
+    },
+    "system": {
+      "type": "object",
+      "required": ["disk", "ram", "cpu"],
+      "additionalProperties": false,
+      "properties": {
+        "disk": { "$ref": "#/$defs/metric" },
+        "ram": { "$ref": "#/$defs/metric" },
+        "cpu": { "$ref": "#/$defs/metric" }
+      }
+    },
+    "services": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/service" }
+    }
+  },
+  "$defs": {
+    "metric": {
+      "type": "object",
+      "required": ["usage_percent", "status", "severity"],
+      "additionalProperties": false,
+      "properties": {
+        "usage_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "status": {
+          "type": "string",
+          "enum": ["OK", "WARNING", "CRITICAL"]
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["OK", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+        }
+      }
+    },
+    "service": {
+      "type": "object",
+      "required": [
+        "name",
+        "status",
+        "severity",
+        "critical_pattern_matched",
+        "score",
+        "pattern_state",
+        "log_level",
+        "error_count",
+        "warning_count",
+        "failed_count",
+        "timeout_count",
+        "matched_lines"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["OK", "DOWN"]
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["OK", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
+        },
+        "critical_pattern_matched": {
+          "type": "boolean",
+          "description": "True if a catastrophic pattern (kernel panic, OOM, segfault, filesystem corruption) forced severity to CRITICAL, regardless of score."
+        },
+        "score": {
+          "type": ["integer", "null"],
+          "description": "Incident score; null when the service is healthy."
+        },
+        "pattern_state": {
+          "type": ["string", "null"],
+          "enum": ["OK", "ERROR", "WARNING", "NO_LOGS_FOUND", "SERVICE_NOT_INSTALLED", "ACCESS_DENIED", null]
+        },
+        "log_level": {
+          "type": ["string", "null"],
+          "enum": ["FATAL", "ERROR", "WARNING", "INFO", null]
+        },
+        "error_count": { "type": ["integer", "null"], "minimum": 0 },
+        "warning_count": { "type": ["integer", "null"], "minimum": 0 },
+        "failed_count": { "type": ["integer", "null"], "minimum": 0 },
+        "timeout_count": { "type": ["integer", "null"], "minimum": 0 },
+        "matched_lines": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

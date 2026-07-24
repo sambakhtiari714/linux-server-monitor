@@ -36,6 +36,7 @@ extract_patterns() {
     PATTERN_TIMEOUT_COUNT=0
     PATTERN_MATCHED_LINES=""
     PATTERN_CRITICAL_FOUND=false
+    LOG_LEVEL=""
 
     # No logs
     if [ -z "$LOG_DATA" ]
