@@ -18,6 +18,12 @@ calculate_severity() {
 
     INCIDENT_SEVERITY="LOW"
 
+    if [ "$PATTERN_CRITICAL_FOUND" = "true" ]
+    then
+        INCIDENT_SEVERITY="CRITICAL"
+        return
+    fi
+
     case "$PATTERN_STATE" in
 
         SERVICE_NOT_INSTALLED)

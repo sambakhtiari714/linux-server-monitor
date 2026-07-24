@@ -29,6 +29,14 @@ extract_patterns() {
 
     LOG_DATA="$1"
 
+    PATTERN_STATE="OK"
+    PATTERN_ERROR_COUNT=0
+    PATTERN_WARNING_COUNT=0
+    PATTERN_FAILED_COUNT=0
+    PATTERN_TIMEOUT_COUNT=0
+    PATTERN_MATCHED_LINES=""
+    PATTERN_CRITICAL_FOUND=false
+
     # No logs
     if [ -z "$LOG_DATA" ]
     then
@@ -44,20 +52,8 @@ extract_patterns() {
         return
     fi
 
-    PATTERN_STATE="OK"
-
     normalize_logs
     detect_log_level
-
-    PATTERN_ERROR_COUNT=0
-    PATTERN_WARNING_COUNT=0
-    PATTERN_FAILED_COUNT=0
-    PATTERN_TIMEOUT_COUNT=0
-
-    PATTERN_MATCHED_LINES=""
-    PATTERN_CRITICAL_FOUND=false
-
-
 
     PATTERN_ERROR_COUNT=$(echo "$LOG_DATA" | grep -ic "error")
     PATTERN_WARNING_COUNT=$(echo "$LOG_DATA" | grep -ic "warning")
@@ -68,10 +64,10 @@ extract_patterns() {
         echo "$LOG_DATA" |
         grep -iE "error|failed|fatal|panic|timeout|permission denied|connection refused"
     )
-    if echo "$LOG_DATA" | grep -qiE \
-	    "kernel panic|out of memory|segmentation fault|filesystem corruption"
+
+    if echo "$LOG_DATA" | grep -qiE "kernel panic|out of memory|segmentation fault|filesystem corruption"
     then
-	    PATTERN_CRITICAL_FOUND=true
+        PATTERN_CRITICAL_FOUND=true
     fi
 
     if [ "$PATTERN_ERROR_COUNT" -gt 0 ] ||
