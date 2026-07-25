@@ -21,6 +21,8 @@ process_incidents() {
 
         fi
 
+        add_service_to_report "$SERVICE" "$STATUS"
+
     done
 
 }
