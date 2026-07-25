@@ -17,7 +17,7 @@
     },
     "overall_status": {
       "type": "string",
-      "enum": ["OK", "WARNING"],
+      "enum": ["HEALTHY", "WARNING"],
       "description": "High-level summary of the whole report."
     },
     "system": {
