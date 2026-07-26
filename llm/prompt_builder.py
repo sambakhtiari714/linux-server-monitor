@@ -1,10 +1,12 @@
 import sys
 from pathlib import Path
 
+# دقیقاً همون ترفند فاز قبل: پوشه‌ی python/ رو به مسیرهای import اضافه می‌کنیم
 sys.path.append(str(Path(__file__).resolve().parent.parent / "python"))
 
 from models import IncidentReport, Metric, Service
 
+# طبق تصمیمی که گرفتیم: فقط این دو تا severity تحلیل کامل می‌گیرن
 DETAILED_SEVERITIES = {"HIGH", "CRITICAL"}
 
 
@@ -72,16 +74,37 @@ def build_prompt(report: IncidentReport) -> str:
 وضعیت کلی: {report.overall_status}
 
 ## بخش ۱ - موارد با اولویت بالا (severity = HIGH یا CRITICAL)
-برای هرکدام از موارد زیر، دقیقاً این ساختار را بده:
-- علت ریشه‌ای احتمالی (root cause)
-- سطح ریسک
-- دستورهای لینوکسی مشخص برای بررسی/رفع مشکل
-
 {detailed_block}
 
 ## بخش ۲ - بقیه‌ی موارد (severity پایین‌تر)
-برای هرکدام از موارد زیر فقط یک خط وضعیت بنویس. اگر واقعاً چیزی برای پیشنهاد دادن هست بگو، وگرنه پیشنهاد نساز.
-
 {brief_block}
+
+## فرمت خروجی — این خیلی مهم است
+فقط و فقط یک JSON معتبر برگردان، بدون هیچ متن اضافه قبل یا بعدش،
+بدون ```json و بدون توضیح، دقیقاً با این ساختار:
+
+{{
+  "overall_summary": "یک یا دو جمله خلاصه کلی وضعیت سرور",
+  "detailed_findings": [
+    {{
+      "component": "اسم سرویس یا متریک",
+      "severity": "HIGH یا CRITICAL",
+      "root_cause": "علت ریشه‌ای احتمالی",
+      "risk": "توضیح سطح ریسک",
+      "fix_commands": ["دستور اول", "دستور دوم"]
+    }}
+  ],
+  "brief_notes": [
+    {{
+      "component": "اسم سرویس یا متریک",
+      "severity": "OK یا LOW یا MEDIUM",
+      "note": "یک خط توضیح وضعیت",
+      "suggestion": "فقط اگر واقعا لازم است، وگرنه null"
+    }}
+  ]
+}}
+
+اگر بخش ۱ خالی بود، detailed_findings را آرایه‌ی خالی [] بگذار.
+اگر بخش ۲ خالی بود، brief_notes را آرایه‌ی خالی [] بگذار.
 """
     return prompt
