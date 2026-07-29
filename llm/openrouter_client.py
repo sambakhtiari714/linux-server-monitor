@@ -3,8 +3,8 @@ import time
 
 import requests
 
-OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_MODEL = "openai/gpt-4o-mini"
+OPENROUTER_URL = os.environ.get("OPENROUTER_BASE_URL", "https://openrouter.ai") + "/api/v1/chat/completions"
+DEFAULT_MODEL = os.environ.get("OPENROUTER_MODEL", "deepseek/deepseek-chat-v3")
 
 
 class OpenRouterError(Exception):
@@ -27,6 +27,9 @@ def call_llm(prompt: str, model: str = DEFAULT_MODEL, max_retries: int = 3, time
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json",
+        "User-Agent": "linux-server-monitor/1.0",
+        "HTTP-Referer": "https://github.com/sambakhtiari714/linux-server-monitor",
+        "X-Title": "linux-server-monitor",
     }
     payload = {
         "model": model,
@@ -38,6 +41,14 @@ def call_llm(prompt: str, model: str = DEFAULT_MODEL, max_retries: int = 3, time
     for attempt in range(1, max_retries + 1):
         try:
             response = requests.post(OPENROUTER_URL, headers=headers, json=payload, timeout=timeout)
+
+            if 400 <= response.status_code < 500:
+                # خطای سمت کاربر (Key نامعتبر، اعتبار ناکافی، مدل غلط و ...).
+                # دوباره تلاش کردن فایده‌ای ندارد، همون لحظه با متن دقیق خطا متوقف می‌شویم.
+                raise OpenRouterError(
+                    f"OpenRouter خطای {response.status_code} داد: {response.text}"
+                )
+
             response.raise_for_status()
             data = response.json()
             return data["choices"][0]["message"]["content"]
