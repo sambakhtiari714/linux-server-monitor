@@ -1,12 +1,10 @@
 import sys
 from pathlib import Path
 
-# دقیقاً همون ترفند فاز قبل: پوشه‌ی python/ رو به مسیرهای import اضافه می‌کنیم
 sys.path.append(str(Path(__file__).resolve().parent.parent / "python"))
 
 from models import IncidentReport, Metric, Service
 
-# طبق تصمیمی که گرفتیم: فقط این دو تا severity تحلیل کامل می‌گیرن
 DETAILED_SEVERITIES = {"HIGH", "CRITICAL"}
 
 
@@ -22,7 +20,12 @@ def _describe_service(service: Service) -> str:
     if service.status == "OK":
         return f"- {service.name}: سالم (OK), severity=OK"
 
-    lines_preview = "; ".join(service.matched_lines[:3]) if service.matched_lines else "(no matched lines)"
+    if _needs_detailed_analysis(service.severity):
+
+        lines_preview = "; ".join(service.matched_lines) if service.matched_lines else "(no matched lines)"
+    else:
+        
+        lines_preview = "; ".join(service.matched_lines[:3]) if service.matched_lines else "(no matched lines)"
 
     return (
         f"- {service.name}: DOWN, severity={service.severity}, "
