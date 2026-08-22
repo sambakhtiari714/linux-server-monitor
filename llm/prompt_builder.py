@@ -21,10 +21,8 @@ def _describe_service(service: Service) -> str:
         return f"- {service.name}: سالم (OK), severity=OK"
 
     if _needs_detailed_analysis(service.severity):
-
         lines_preview = "; ".join(service.matched_lines) if service.matched_lines else "(no matched lines)"
     else:
-        
         lines_preview = "; ".join(service.matched_lines[:3]) if service.matched_lines else "(no matched lines)"
 
     return (
@@ -39,11 +37,6 @@ def _describe_service(service: Service) -> str:
 
 
 def build_prompt(report: IncidentReport) -> str:
-    """
-    از روی یک IncidentReport، متن پرامپت نهایی برای LLM را می‌سازد.
-    قانون اصلی: severity HIGH/CRITICAL -> تحلیل کامل، بقیه -> یک خط.
-    """
-
     all_metrics = [
         ("disk", report.system.disk),
         ("ram", report.system.ram),
@@ -111,3 +104,16 @@ def build_prompt(report: IncidentReport) -> str:
 اگر بخش ۲ خالی بود، brief_notes را آرایه‌ی خالی [] بگذار.
 """
     return prompt
+
+
+def build_repair_prompt(raw_text: str) -> str:
+    return f"""متن زیر باید یک JSON معتبر باشد ولی معتبر نیست.
+
+وظیفه تو فقط این است: ساختار JSON را اصلاح کن.
+هیچ اطلاعاتی اضافه یا حذف نکن.
+هیچ تحلیل جدیدی انجام نده.
+فقط و فقط JSON معتبر خروجی بده، بدون ```json، بدون هیچ توضیح اضافه.
+
+متن ورودی:
+{raw_text}
+"""

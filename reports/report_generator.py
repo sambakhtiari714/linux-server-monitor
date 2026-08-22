@@ -35,7 +35,7 @@ def render_cli(report: AnalysisReport) -> str:
             lines.append(f"{color}[{finding.severity}] {finding.component}{NC}")
             lines.append(f"  علت ریشه‌ای : {finding.root_cause}")
             lines.append(f"  ریسک        : {finding.risk}")
-            lines.append("  دستورها     :")
+            lines.append("  دستورها     : (⚠️ قبل از اجرا با توزیع لینوکس خودتان تطبیق دهید)")
             for cmd in finding.fix_commands:
                 lines.append(f"    $ {cmd}")
             lines.append("")
@@ -67,7 +67,7 @@ def render_markdown(report: AnalysisReport, hostname: str = "", generated_at: st
             lines.append(f"### {finding.component} — `{finding.severity}`")
             lines.append(f"- **علت ریشه‌ای:** {finding.root_cause}")
             lines.append(f"- **ریسک:** {finding.risk}")
-            lines.append("- **دستورها:**")
+            lines.append("- **دستورها** (⚠️ این دستورها توسط LLM تولید شده‌اند؛ قبل از اجرا با توزیع لینوکس و پیکربندی سرور خودتان تطبیق دهید):")
             for cmd in finding.fix_commands:
                 lines.append(f"  ```bash\n  {cmd}\n  ```")
             lines.append("")
