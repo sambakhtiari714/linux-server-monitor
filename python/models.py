@@ -1,7 +1,7 @@
 from typing import Literal, Optional
 from pydantic import BaseModel, Field
 
-Severity = Literal["OK", "LOW", "MEDIUM", "HIGH", "CIRITICAL"]
+Severity = Literal["OK", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
 
 class Metric(BaseModel):
     model_config = {"extra" : "forbid"}
