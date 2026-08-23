@@ -15,6 +15,10 @@ class SchemaValidationError(ResponseParseError):
     pass
 
 
+class SemanticValidationError(ResponseParseError):
+    pass
+
+
 def strip_markdown_fence(text: str) -> str:
     text = text.strip()
     if text.startswith("```"):

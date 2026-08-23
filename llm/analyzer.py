@@ -12,8 +12,10 @@ from response_parser import (
     parse_analysis_response,
     JSONSyntaxError,
     SchemaValidationError,
+    SemanticValidationError,
     ResponseParseError,
 )
+from semantic_validator import validate_semantics
 from schemas import AnalysisReport
 
 DEBUG_DIR = Path(__file__).resolve().parent.parent / "reports" / "debug"
@@ -40,7 +42,8 @@ def get_valid_analysis(report: IncidentReport, max_retries: int = 3) -> Analysis
 
         try:
             analysis = parse_analysis_response(raw_text)
-            print(f"[analyzer] تلاش {attempt}: parse=OK validation=OK")
+            validate_semantics(analysis, report)
+            print(f"[analyzer] تلاش {attempt}: parse=OK validation=OK semantic=OK")
             return analysis
 
         except JSONSyntaxError as e:
@@ -53,6 +56,7 @@ def get_valid_analysis(report: IncidentReport, max_retries: int = 3) -> Analysis
             try:
                 repaired_text = call_llm(repair_prompt)
                 analysis = parse_analysis_response(repaired_text)
+                validate_semantics(analysis, report)
                 print(f"[analyzer] تلاش {attempt}: Repair=OK")
                 return analysis
             except ResponseParseError:
@@ -60,8 +64,12 @@ def get_valid_analysis(report: IncidentReport, max_retries: int = 3) -> Analysis
 
         except SchemaValidationError as e:
             print(f"[analyzer] تلاش {attempt}: parse=OK validation=FAILED")
-            saved_path = _save_raw_response(raw_text)
-            print(f"[analyzer]   پاسخ خام ذخیره شد: {saved_path}")
+            _save_raw_response(raw_text)
+            last_error = e
+
+        except SemanticValidationError as e:
+            print(f"[analyzer] تلاش {attempt}: validation=OK semantic=FAILED ({e})")
+            _save_raw_response(raw_text)
             last_error = e
 
         if attempt < total_attempts:
